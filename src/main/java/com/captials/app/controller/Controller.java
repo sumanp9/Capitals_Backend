@@ -11,16 +11,16 @@ import java.util.List;
 public class Controller {
 
     @Autowired
-    CountryService countryService;
+    CountryService service;
 
     @GetMapping("/")
     public String home() {
         return "<h1>Hello and Welcome to the App</h1>";
     }
 
-    @GetMapping("/getAllCountries")
+   @GetMapping("/getAllCountries")
     public List<String> getAllCountries() {
-        return this.countryService.getAllCountries();
+        return this.service.getAllCountries();
     }
 
 }
