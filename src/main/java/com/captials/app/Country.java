@@ -1,11 +1,9 @@
 package com.captials.app;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "tbl_country")
 public class Country {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -20,6 +18,19 @@ public class Country {
     private String region;
 
     private String continent;
+
+    public Country(Integer id, String name, Integer population, String capital, String region, String continent) {
+        this.id = id;
+        this.name = name;
+        this.population = population;
+        this.capital = capital;
+        this.region = region;
+        this.continent = continent;
+    }
+
+    public Country() {
+
+    }
 
     public Integer getId() {
         return id;
