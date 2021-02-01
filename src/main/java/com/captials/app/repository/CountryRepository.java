@@ -9,6 +9,6 @@ import java.util.List;
 
 @Repository
 public interface CountryRepository extends CrudRepository<Country, Long> {
-    @Query(value = "SELECT id, name,population, capital, region, continent from Country")
+    @Query(value = "SELECT name from Country order by name asc")
     List<String> findAllCountries();
 }
