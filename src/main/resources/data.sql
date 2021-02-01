@@ -7,5 +7,3 @@ INSERT INTO tbl_country (name, population, capital, region, continent) VALUES ('
 INSERT INTO tbl_country (name, population, capital, region, continent) VALUES ('Pakistan',220892340,'Islamabad','South','Asia');
 INSERT INTO tbl_country (name, population, capital, region, continent) VALUES ('Sri Lanka',21413249,'Colombo','South','Asia');
 INSERT INTO tbl_country (name, population, capital, region, continent) VALUES ('Iran',83992949,'Tehran','South','Asia');
-
-SELECT * FROM tbl_country ORDER BY name ASC;
